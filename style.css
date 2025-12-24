@@ -93,12 +93,25 @@ body {
   padding: 0 20px;
 }
 
-.section h2 {
+.section h2,
+.section-inner h2 {
   font-family: 'DM Serif Display', serif;
   font-size: 1.6rem;
   font-weight: 400;
-  margin-bottom: 20px;
+  margin-bottom: 24px;
+  position: relative;
 }
+
+.section h2::after,
+.section-inner h2::after {
+  content: "";
+  width: 36px;
+  height: 3px;
+  background: var(--accent);
+  display: block;
+  margin-top: 10px;
+}
+
 
 .lead {
   font-style: italic;
@@ -124,16 +137,29 @@ body {
 
 /* CONTACT */
 .contact {
-  margin: 100px auto 0;
-  padding-bottom: 60px;
+  background: #1f2f2f;      /* dark, rich */
+  color: #f0f0f0;
+  padding: 90px 20px;
+  margin-top: 120px;
+}
+
+.contact h2 {
+  color: #ffffff;
+}
+
+.contact h2::after {
+  background: #9fc7c7;      /* softened accent */
+}
+
+.contact p {
+  max-width: 600px;
 }
 
 .contact-line a {
-  font-size: 1rem;
-  text-decoration: none;
-  color: var(--accent);
-  border-bottom: 1px solid rgba(15, 61, 62, 0.3);
+  color: #9fc7c7;
+  border-bottom: 1px solid rgba(159, 199, 199, 0.4);
 }
+
 
 /* FOOTER */
 footer {
