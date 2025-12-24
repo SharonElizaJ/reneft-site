@@ -74,7 +74,7 @@ body {
 }
 
 .hero-divider {
-  width: 72px;
+  width: 120px;
   height: 3px;
   background: var(--accent);
   margin: 24px 0;
