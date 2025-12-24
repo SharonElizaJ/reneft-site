@@ -102,16 +102,18 @@ body {
 ========================= */
 .image-section {
   max-width: 900px;
-  margin: 30px auto 70px;
-  padding: 0 20px;
+  margin: 40px auto 80px;
+  padding: 36px;                 
+  background: #f1e7de;          
+  border-radius: 4px;
 }
 
 .image-slider {
   position: relative;
   width: 100%;
-  aspect-ratio: 16 / 9;
+  aspect-ratio: 16 / 10;
   overflow: hidden;
-  border-radius: 3px;
+  border-radius: 2px;
 }
 
 .image-slider img {
@@ -127,6 +129,10 @@ body {
 
 .image-slider img.active {
   opacity: 1;
+}
+
+.image-section {
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
 }
 
 /* =========================
