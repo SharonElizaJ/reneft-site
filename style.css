@@ -27,9 +27,17 @@ body {
 
 /* HERO */
 .hero {
-  color: #f3f5f4;
+  padding: 120px 20px 70px;
+   color: #f3f5f4;
+}
+
+.hero-inner {
+  max-width: 900px;
+  margin: auto;
   background: var(--hero-bg);
-  padding: 110px 20px 60px;
+  padding: 80px 60px;
+  border-radius: 4px; 
+  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
 }
 
 .hero-title {
@@ -45,12 +53,6 @@ body {
   width: 4px;
   height: 85%;
   background: var(--accent);
-}
-
-.hero-inner {
-  max-width: 900px;
-  margin: 0 auto;
-  padding-left: 18px;
 }
 
 .hero h1 {
@@ -184,29 +186,6 @@ body {
 .contact p {
   max-width: 600px;
 }
-
-/* IMAGE CROSSFADE */
-.image-slider {
-  position: relative;
-  width: 100%;
-  height: auto;
-}
-
-.image-slider img {
-  position: absolute;
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: auto;
-  opacity: 0;
-  transition: opacity 1.8s ease-in-out;
-}
-
-.image-slider img.active {
-  opacity: 1;
-  position: relative;
-}
-
 
 
 /* FOOTER */
