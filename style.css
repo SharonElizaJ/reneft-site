@@ -217,7 +217,8 @@ body {
 }
 
 .contact p {
-  max-width: 520px;
+  max-width: none;
+  white-space: nowrap;
 }
 
 .contact-line a {
