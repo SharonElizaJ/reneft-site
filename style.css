@@ -63,9 +63,9 @@ body {
 }
 
 .hero h1 span {
-  color: var(--accent);
-  font-size: 0.95em;
+  color: #2b2b2b; 
 }
+
 
 .hero-sub {
   font-size: 1.15rem;
