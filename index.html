@@ -35,9 +35,13 @@
 </header>
 
   <!-- IMAGE -->
-  <section class="image-section">
-    <img src="hero-image.jpg" alt="Architectural concrete structure">
-  </section>
+<section class="image-section">
+  <div class="image-slider">
+    <img src="hero-image.jpg" class="slide active" alt="">
+    <img src="hero-image-2.jpg" class="slide" alt="">
+    <img src="hero-image-3.jpg" class="slide" alt="">
+  </div>
+</section>
 
   <!-- ABOUT -->
   <section class="section">
@@ -52,8 +56,7 @@
     </p>
 
     <p>
-      Our work is guided by international standards and a belief that
-      clarity, documentation, and accountability matter as much as calculations.
+      Our work is guided by international standards and a belief that clarity, documentation, and accountability matter as much as calculations.
     </p>
   </section>
 
@@ -107,6 +110,15 @@
   <footer>
     © RENEFT
   </footer>
+<script>
+  const slides = document.querySelectorAll(".image-slider .slide");
+  let current = 0;
 
+  setInterval(() => {
+    slides[current].classList.remove("active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("active");
+  }, 6000); // change every 6 seconds
+</script>
 </body>
 </html>
