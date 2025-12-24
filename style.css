@@ -1,33 +1,38 @@
 /* RESET */
-{
+* {
   box-sizing: border-box;
 }
 
+/* COLOUR SYSTEM */
+:root {
+  --bg-main: #f7f7f5;
+  --bg-soft: #ffffff;
+  --text-main: #1c1c1c;
+  --text-muted: #666;
+  --accent: #243447; /* deep blue-grey */
+}
+
+/* BASE */
 body {
   margin: 0;
   font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Arial, sans-serif;
   line-height: 1.7;
-  color: #1c1c1c;
-  background: #ffffff;
-}
-
-/* SUBTLE ACCENT COLOUR */
-:root {
-  --accent: #2a3a4a; /* deep blue-grey */
+  color: var(--text-main);
+  background: var(--bg-main);
 }
 
 /* HERO */
 .hero {
   max-width: 900px;
-  margin: 140px auto 110px;
+  margin: 160px auto 120px;
   padding: 0 20px;
 }
 
 .hero h1 {
-  font-size: 3.3rem;
+  font-size: 3.4rem;
   font-weight: 600;
   letter-spacing: -0.6px;
-  margin-bottom: 22px;
+  margin-bottom: 24px;
 }
 
 .hero h1 span {
@@ -37,12 +42,19 @@ body {
 .hero-sub {
   font-size: 1.15rem;
   max-width: 720px;
-  margin-bottom: 14px;
+  margin-bottom: 28px;
+}
+
+.hero-divider {
+  width: 64px;
+  height: 2px;
+  background: var(--accent);
+  margin: 28px 0;
 }
 
 .hero-meta {
   font-size: 0.9rem;
-  color: #666;
+  color: var(--text-muted);
 }
 
 /* SECTIONS */
@@ -52,63 +64,51 @@ body {
   padding: 0 20px;
 }
 
+.section-soft {
+  background: var(--bg-soft);
+  padding: 100px 20px;
+  max-width: none;
+}
+
 .section h2 {
   font-size: 1.45rem;
   font-weight: 600;
-  margin-bottom: 26px;
-  position: relative;
+  margin-bottom: 24px;
 }
 
-/* subtle section marker */
-.section h2::after {
-  content: "";
-  display: block;
-  width: 28px;
-  height: 2px;
-  background: var(--accent);
-  margin-top: 12px;
-}
-
-/* LEAD TEXT */
 .lead {
   font-style: italic;
-  color: #555;
+  color: var(--text-muted);
   margin-bottom: 34px;
 }
 
 /* SERVICES */
 .services {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 60px;
+  max-width: 900px;
+  margin: auto;
 }
 
-.services h3 {
+.service h3 {
   font-size: 1rem;
   font-weight: 600;
   margin-bottom: 12px;
   color: var(--accent);
 }
 
-.services ul {
-  padding-left: 18px;
+.service p {
   margin: 0;
-}
-
-.services li {
-  margin-bottom: 8px;
+  color: #333;
 }
 
 /* CONTACT */
-.contact {
-  margin-bottom: 90px;
-}
-
 .contact-line a {
   font-size: 1rem;
   text-decoration: none;
   color: var(--accent);
-  border-bottom: 1px solid rgba(42, 58, 74, 0.3);
+  border-bottom: 1px solid rgba(36, 52, 71, 0.3);
 }
 
 /* FOOTER */
