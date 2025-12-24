@@ -33,6 +33,7 @@ body {
 .hero-inner {
   max-width: 900px;
   margin: 0 auto;
+  padding-left: 18px;
 }
 
 .hero h1 {
