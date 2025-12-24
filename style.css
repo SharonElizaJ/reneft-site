@@ -38,7 +38,7 @@ body {
 }
 
 .hero-inner {
-  max-width: 900px;
+  max-width: 1120px;
   margin: auto;
   background: var(--hero-bg);
   padding: 40px 56px;
@@ -101,7 +101,7 @@ body {
    IMAGE SLIDER (UNIFORM SIZE)
 ========================= */
 .image-section {
-  max-width: 900px;
+  max-width: 1120px;
   margin: 40px auto 80px;
   padding: 36px;                 
   background: #ecd7d3;         
@@ -139,7 +139,7 @@ body {
    SECTIONS
 ========================= */
 .section {
-  max-width: 900px;
+  max-width: 1120px;
   margin: 50px auto;
   padding: 0 20px;
 }
@@ -150,7 +150,7 @@ body {
 }
 
 .section-inner {
-  max-width: 900px;
+  max-width: 1120px;
   margin: auto;
   padding: 0 20px;
 }
