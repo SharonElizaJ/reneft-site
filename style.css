@@ -26,7 +26,7 @@ body {
 /* HERO */
 .hero {
   max-width: 900px;
-  margin: 120px auto 80px;
+  margin: 100px auto 40px;
   padding: 0 20px;
 }
 
@@ -63,8 +63,9 @@ body {
 /* IMAGE SECTION */
 .image-section {
   max-width: 1200px;
-  margin: 0 auto 90px;
+  margin: 0 auto 50px;
   padding: 0 20px;
+  margin-top: -20px;
 }
 
 .image-section img {
