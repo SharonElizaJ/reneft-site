@@ -226,6 +226,37 @@ body {
   border-bottom: 1px solid rgba(209, 106, 106, 0.4);
 }
 
+/* SIDE DEPTH – SUBTLE FRAMING */
+body::before,
+body::after {
+  content: "";
+  position: fixed;
+  top: 0;
+  width: 18vw;
+  height: 100vh;
+  pointer-events: none;
+  z-index: -1;
+}
+
+body::before {
+  left: 0;
+  background: linear-gradient(
+    to right,
+    rgba(230, 214, 203, 0.6),
+    rgba(246, 239, 233, 0)
+  );
+}
+
+body::after {
+  right: 0;
+  background: linear-gradient(
+    to left,
+    rgba(230, 214, 203, 0.6),
+    rgba(246, 239, 233, 0)
+  );
+}
+
+
 /* =========================
    FOOTER
 ========================= */
