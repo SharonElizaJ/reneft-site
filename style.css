@@ -30,6 +30,22 @@ body {
   padding: 110px 20px 60px;
 }
 
+.hero-title {
+  position: relative;
+  padding-left: 20px;
+}
+
+.hero-title::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0.15em;
+  width: 4px;
+  height: 85%;
+  background: var(--accent);
+}
+
+
 .hero-inner {
   max-width: 900px;
   margin: 0 auto;
