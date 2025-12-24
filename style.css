@@ -1,20 +1,29 @@
-/* RESET */
+/* =========================
+   RESET
+========================= */
 * {
   box-sizing: border-box;
 }
 
-/* COLOUR SYSTEM */
+/* =========================
+   COLOUR SYSTEM
+========================= */
 :root {
   --bg-main: #f4f4f2;
-  --hero-bg: #1f3d2b; 
   --bg-soft: #ffffff;
+
+  --hero-bg: #1f3d2b;   /* forest green */
+  --contact-bg: #0b3f35; /* emerald */
+
   --text-main: #2b2b2b;
   --text-muted: #666;
-  --accent: #8b2f2f
 
+  --accent: #8b2f2f; /* deep muted red */
 }
 
-/* BASE */
+/* =========================
+   BASE
+========================= */
 body {
   margin: 0;
   font-family: 'Source Serif 4', serif;
@@ -25,10 +34,11 @@ body {
   background: var(--bg-main);
 }
 
-/* HERO */
+/* =========================
+   HERO (CENTERED PANEL)
+========================= */
 .hero {
   padding: 120px 20px 70px;
-   color: #f3f5f4;
 }
 
 .hero-inner {
@@ -36,13 +46,29 @@ body {
   margin: auto;
   background: var(--hero-bg);
   padding: 80px 60px;
-  border-radius: 4px; 
-  box-shadow: 0 10px 30px rgba(0,0,0,0.08);
+  border-radius: 4px;
 }
 
+/* HERO TEXT */
+.hero h1 {
+  font-family: 'DM Serif Display', serif;
+  font-size: 3.6rem;
+  font-weight: 400;
+  letter-spacing: -0.2px;
+  line-height: 1.1;
+  margin-bottom: 24px;
+  color: #f3f5f4;
+}
+
+/* SECOND LINE (NO ACCENT COLOUR) */
+.hero h1 span {
+  color: #e6ece9;
+}
+
+/* HERO ACCENT LINE */
 .hero-title {
   position: relative;
-  padding-left: 20px;
+  padding-left: 22px;
 }
 
 .hero-title::before {
@@ -53,25 +79,14 @@ body {
   width: 4px;
   height: 85%;
   background: var(--accent);
-}
-
-.hero h1 {
-  font-family: 'DM Serif Display', serif;
-  font-size: 3.6rem;
-  font-weight: 400;
-  letter-spacing: -0.2px;
-  line-height: 1.1;
-  margin-bottom: 24px;
-}
-
-.hero h1 span {
-  color: #e6ece9;
+  border-radius: 2px;
 }
 
 .hero-sub {
   font-size: 1.15rem;
   max-width: 720px;
   margin-bottom: 24px;
+  color: #e6ece9;
 }
 
 .hero-divider {
@@ -83,26 +98,44 @@ body {
 
 .hero-meta {
   font-size: 0.9rem;
-  color: var(--text-muted);
+  color: #d6ddd9;
 }
 
-/* IMAGE SECTION */
+/* =========================
+   IMAGE SLIDER (UNIFORM SIZE)
+========================= */
 .image-section {
-  max-width: 900px;        /* SAME AS HERO */
-  margin: 30px auto 70px;  /* controlled spacing */
+  max-width: 900px;
+  margin: 30px auto 70px;
   padding: 0 20px;
 }
 
-
-.image-section img {
+.image-slider {
+  position: relative;
   width: 100%;
-  height: auto;
-  display: block;
+  aspect-ratio: 16 / 9;
+  overflow: hidden;
   border-radius: 3px;
 }
 
+.image-slider img {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  opacity: 0;
+  transition: opacity 1.8s ease-in-out;
+}
 
-/* SECTIONS */
+.image-slider img.active {
+  opacity: 1;
+}
+
+/* =========================
+   SECTIONS
+========================= */
 .section {
   max-width: 900px;
   margin: 80px auto;
@@ -120,6 +153,7 @@ body {
   padding: 0 20px;
 }
 
+/* SECTION HEADINGS */
 .section h2,
 .section-inner h2 {
   font-family: 'DM Serif Display', serif;
@@ -139,20 +173,20 @@ body {
   margin-top: 12px;
 }
 
-
+/* LEAD TEXT */
 .lead {
   font-style: italic;
   color: var(--text-muted);
   margin-bottom: 30px;
 }
 
-/* SERVICES */
+/* =========================
+   SERVICES
+========================= */
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
   gap: 50px;
-  max-width: 900px;
-  margin: auto;
 }
 
 .service h3 {
@@ -162,9 +196,11 @@ body {
   color: var(--accent);
 }
 
-/* CONTACT */
+/* =========================
+   CONTACT (STRONG ENDING)
+========================= */
 .contact {
-  background: #0b3f35;
+  background: var(--contact-bg);
   color: #f2f2f2;
   padding: 90px 20px;
   margin-top: 120px;
@@ -175,20 +211,22 @@ body {
 }
 
 .contact h2::after {
-  background: #b14a4a; /* softened red for dark bg */
-}
-
-.contact-line a {
-  color: #d16a6a;
-  border-bottom: 1px solid rgba(209, 106, 106, 0.4);
+  background: #b14a4a;
 }
 
 .contact p {
   max-width: 600px;
 }
 
+.contact-line a {
+  color: #d16a6a;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(209, 106, 106, 0.4);
+}
 
-/* FOOTER */
+/* =========================
+   FOOTER
+========================= */
 footer {
   margin-top: 60px;
   padding: 40px 20px;
