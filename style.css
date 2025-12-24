@@ -6,6 +6,7 @@
 /* COLOUR SYSTEM */
 :root {
   --bg-main: #f4f4f2;
+  --hero-bg: #f1f4f3;
   --bg-soft: #ffffff;
   --text-main: #2b2b2b;
   --text-muted: #666;
@@ -25,9 +26,15 @@ body {
 
 /* HERO */
 .hero {
+  max-width: none;
+  background: var(--hero-bg);
+  padding: 120px 20px 70px;
+}
+
+.hero > * {
   max-width: 900px;
-  margin: 100px auto 40px;
-  padding: 0 20px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .hero h1 {
