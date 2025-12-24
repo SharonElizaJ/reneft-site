@@ -11,24 +11,33 @@ body {
   background: #ffffff;
 }
 
+/* SUBTLE ACCENT COLOUR */
+:root {
+  --accent: #2a3a4a; /* deep blue-grey */
+}
+
 /* HERO */
 .hero {
   max-width: 900px;
-  margin: 140px auto 120px;
+  margin: 140px auto 110px;
   padding: 0 20px;
 }
 
 .hero h1 {
-  font-size: 3.2rem;
+  font-size: 3.3rem;
   font-weight: 600;
-  letter-spacing: -0.5px;
-  margin-bottom: 20px;
+  letter-spacing: -0.6px;
+  margin-bottom: 22px;
+}
+
+.hero h1 span {
+  color: var(--accent);
 }
 
 .hero-sub {
-  font-size: 1.1rem;
-  max-width: 700px;
-  margin-bottom: 12px;
+  font-size: 1.15rem;
+  max-width: 720px;
+  margin-bottom: 14px;
 }
 
 .hero-meta {
@@ -44,28 +53,41 @@ body {
 }
 
 .section h2 {
-  font-size: 1.4rem;
+  font-size: 1.45rem;
   font-weight: 600;
-  margin-bottom: 20px;
+  margin-bottom: 26px;
+  position: relative;
 }
 
+/* subtle section marker */
+.section h2::after {
+  content: "";
+  display: block;
+  width: 28px;
+  height: 2px;
+  background: var(--accent);
+  margin-top: 12px;
+}
+
+/* LEAD TEXT */
 .lead {
   font-style: italic;
   color: #555;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
 }
 
 /* SERVICES */
 .services {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
-  gap: 50px;
+  gap: 60px;
 }
 
 .services h3 {
   font-size: 1rem;
   font-weight: 600;
-  margin-bottom: 10px;
+  margin-bottom: 12px;
+  color: var(--accent);
 }
 
 .services ul {
@@ -74,19 +96,19 @@ body {
 }
 
 .services li {
-  margin-bottom: 6px;
+  margin-bottom: 8px;
 }
 
 /* CONTACT */
 .contact {
-  margin-bottom: 80px;
+  margin-bottom: 90px;
 }
 
 .contact-line a {
   font-size: 1rem;
   text-decoration: none;
-  color: #1c1c1c;
-  border-bottom: 1px solid #ccc;
+  color: var(--accent);
+  border-bottom: 1px solid rgba(42, 58, 74, 0.3);
 }
 
 /* FOOTER */
