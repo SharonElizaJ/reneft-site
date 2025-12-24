@@ -27,6 +27,7 @@ body {
 
 /* HERO */
 .hero {
+  color: #f3f5f4;
   background: var(--hero-bg);
   padding: 110px 20px 60px;
 }
@@ -62,7 +63,7 @@ body {
 }
 
 .hero h1 span {
-  color: #2b2b2b; 
+  color: #e6ece9;
 }
 
 .hero-sub {
