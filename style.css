@@ -6,15 +6,12 @@
    COLOUR SYSTEM
 ========================= */
 :root {
-  --bg-main: #f4f4f2;
+  --bg-main: #eef3f8;
   --bg-soft: #ffffff;
-
   --hero-bg: #1f3d2b;   /* forest green */
   --contact-bg: #0b3f35; /* emerald */
-
   --text-main: #2b2b2b;
   --text-muted: #666;
-
   --accent: #8b2f2f; /* deep muted red */
 }
 
@@ -32,7 +29,7 @@ body {
 }
 
 /* =========================
-   HERO (CENTERED PANEL)
+   HERO 
 ========================= */
 .hero {
   padding: 120px 20px 70px;
@@ -194,7 +191,7 @@ body {
 }
 
 /* =========================
-   CONTACT (STRONG ENDING)
+   CONTACT
 ========================= */
 .contact {
   background: var(--contact-bg);
