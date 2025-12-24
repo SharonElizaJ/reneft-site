@@ -1,8 +1,9 @@
 /* RESET */
 body {
-  background: #f0f0f0;}
+  background: red !important;
+}
 
-* {
+{
   box-sizing: border-box;
 }
 
